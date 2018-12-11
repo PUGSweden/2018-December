@@ -1,0 +1,581 @@
+{
+  "Activity": [
+    {
+      "Id": 16,
+      "Path": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1\\addusertogroup.ps1",
+      "Name": "Add AD Group Member",
+      "DisplayName": "{\"en\":\"Add AD Group Member\"}",
+      "Version": "1",
+      "Category": "AD Group  Management",
+      "Disable": false,
+      "MissitoId": "9832af2d-ff23-47ac-ad8a-cd66446afb3c",
+      "LifeCycleStatus": "Active",
+      "RunCondition": "",
+      "FixedVersion": false
+    },
+    {
+      "Id": 17,
+      "Path": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1\\sendmailmessage.ps1",
+      "Name": "Send AD Mail",
+      "Version": "1",
+      "Category": "AD Group  Management",
+      "Disable": false,
+      "MissitoId": "b2138978-0564-49ae-a370-2506de0eb35a",
+      "LifeCycleStatus": "Active",
+      "RunCondition": "",
+      "FixedVersion": false
+    },
+    {
+      "Id": 18,
+      "Path": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1\\removeuserfromgroup.ps1",
+      "Name": "Remove user from AD group",
+      "DisplayName": "{\"en\":\"Remove user from AD group\"}",
+      "Version": "1",
+      "Category": "AD Group  Management",
+      "Disable": false,
+      "MissitoId": "7d594d64-e39a-466e-abcd-96ab1e1d64ba",
+      "LifeCycleStatus": "Active",
+      "RunCondition": "",
+      "FixedVersion": false
+    }
+  ],
+  "Parameter": [
+    {
+      "Id": 82,
+      "Input": true,
+      "VariableName": "Object",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "9832af2d-ff23-47ac-ad8a-cd66446afb3c"
+      },
+      "Value": "",
+      "DisplayName": "{\"en\":\"Member Object\"}",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": true,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "85af0081-d922-4e4a-9ff4-4d3596ad8b01",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 83,
+      "Input": true,
+      "VariableName": "Group",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "9832af2d-ff23-47ac-ad8a-cd66446afb3c"
+      },
+      "Value": "",
+      "DisplayName": "{\"en\":\"Group Name\"}",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": true,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "adabbea5-3eca-4b34-87f0-cce35ea9bb9c",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 84,
+      "Input": true,
+      "VariableName": "To",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "b2138978-0564-49ae-a370-2506de0eb35a"
+      },
+      "Value": "",
+      "DisplayName": "To",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": false,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "fe218ddf-dea2-44de-9458-511553f67260",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 85,
+      "Input": true,
+      "VariableName": "Group",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "b2138978-0564-49ae-a370-2506de0eb35a"
+      },
+      "Value": "",
+      "DisplayName": "Group",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": false,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "a0fbc08a-b5fb-4789-a336-a0afe239abc2",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 86,
+      "Input": true,
+      "VariableName": "Object",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "7d594d64-e39a-466e-abcd-96ab1e1d64ba"
+      },
+      "Value": "",
+      "DisplayName": "Object",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": false,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "c776ec85-d934-40de-b58f-365db762e027",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 87,
+      "Input": true,
+      "VariableName": "Group",
+      "Type": "System.String",
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "7d594d64-e39a-466e-abcd-96ab1e1d64ba"
+      },
+      "Value": "",
+      "DisplayName": "Group",
+      "PlaceholderText": "",
+      "Visible": 1,
+      "AutoCompleteServiceURI": "",
+      "Required": false,
+      "InstanceAttribute": false,
+      "Description": "",
+      "InputDirective": "snow-textbox",
+      "ValidationRegExp": "",
+      "ValidationRegExpMessage": "",
+      "MissitoId": "3bdf9d0b-06e0-4d8c-b61c-b7ae6f848010",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    }
+  ],
+  "WorkflowParameterSetting": [
+    {
+      "Id": 52,
+      "Parameter": {
+        "MissitoId": "a0fbc08a-b5fb-4789-a336-a0afe239abc2"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "2f6bcdcd-81d7-41a5-8fa0-3ba53869d4e4"
+      },
+      "Value": "{{wpd:d672a51e-d13e-4476-a73b-1ba77c0a11aa:adabbea5-3eca-4b34-87f0-cce35ea9bb9c}}",
+      "Visible": 0,
+      "AutoCompleteServiceURI": "",
+      "MissitoId": "db8a9128-132b-4440-9e60-bb675269651d",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 53,
+      "Parameter": {
+        "MissitoId": "fe218ddf-dea2-44de-9458-511553f67260"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "2f6bcdcd-81d7-41a5-8fa0-3ba53869d4e4"
+      },
+      "Value": "{{na:user.activedirectory.mail}}",
+      "Visible": 0,
+      "AutoCompleteServiceURI": "",
+      "Required": true,
+      "MissitoId": "96034fa2-e654-47e0-b5b9-0bc3a5f2d597",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 50,
+      "Parameter": {
+        "MissitoId": "adabbea5-3eca-4b34-87f0-cce35ea9bb9c"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "d672a51e-d13e-4476-a73b-1ba77c0a11aa"
+      },
+      "AutoCompleteServiceURI": "",
+      "PowershellWebservice_Id": 8,
+      "InputDirective": "snow-autocomplete",
+      "PowershellWebservice": {
+        "MissitoId": "90b99a4e-29a9-4804-b19e-263f0dddd85b",
+        "Parameters": []
+      },
+      "MissitoId": "cda457b1-bf10-4875-9373-244e459c10e2",
+      "ConnectedPowershellWebserviceConfiguration": "{\"Parameters\":{\"Group\":\"{0}\"},\"DisplayAttribute\":\"Name\",\"ValueAttribute\":\"DistinguishedName\"}"
+    },
+    {
+      "Id": 51,
+      "Parameter": {
+        "MissitoId": "85af0081-d922-4e4a-9ff4-4d3596ad8b01"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "d672a51e-d13e-4476-a73b-1ba77c0a11aa"
+      },
+      "Value": "{{na:user.activedirectory.distinguishedName}}",
+      "Visible": 0,
+      "AutoCompleteServiceURI": "",
+      "MissitoId": "50ce3812-a6a6-423b-a2cf-bbe038057e16",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    }
+  ],
+  "Workflow": [
+    {
+      "Id": 6,
+      "Name": "Add user to AD group",
+      "Description": "This workflow adds a user to a AD group",
+      "Type": "Order",
+      "LifeCycleStatus": "Active",
+      "MissitoId": "1446a948-9fb9-4b21-955d-a5a0e340e8df"
+    },
+    {
+      "Id": 8,
+      "Name": "Remove user from AD group",
+      "DisplayName": "{\"en\":\"Remove user from AD group\"}",
+      "Type": "Cancel",
+      "LifeCycleStatus": "Active",
+      "MissitoId": "71527e9a-52e7-4112-9405-bf562b2e4a74"
+    }
+  ],
+  "WorkflowActivity": [
+    {
+      "Id": 28,
+      "Prio": 2,
+      "Disable": false,
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "b2138978-0564-49ae-a370-2506de0eb35a"
+      },
+      "Workflow": {
+        "MissitoId": "1446a948-9fb9-4b21-955d-a5a0e340e8df"
+      },
+      "RunCondition": "",
+      "MissitoId": "2f6bcdcd-81d7-41a5-8fa0-3ba53869d4e4"
+    },
+    {
+      "Id": 29,
+      "Prio": 1,
+      "Disable": false,
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "9832af2d-ff23-47ac-ad8a-cd66446afb3c"
+      },
+      "Workflow": {
+        "MissitoId": "1446a948-9fb9-4b21-955d-a5a0e340e8df"
+      },
+      "RunCondition": "",
+      "MissitoId": "d672a51e-d13e-4476-a73b-1ba77c0a11aa"
+    },
+    {
+      "Id": 31,
+      "Prio": 1,
+      "Disable": false,
+      "Activity": {
+        "Disable": false,
+        "MissitoId": "7d594d64-e39a-466e-abcd-96ab1e1d64ba"
+      },
+      "Workflow": {
+        "MissitoId": "71527e9a-52e7-4112-9405-bf562b2e4a74"
+      },
+      "RunCondition": "",
+      "MissitoId": "cbcaf996-53d7-4d74-87d8-15d782650d77"
+    }
+  ],
+  "Category": [
+    {
+      "Id": 1,
+      "Name": "Service Catalog",
+      "Description": "Services offered",
+      "MissitoId": "dc77b6d5-0fd1-48b0-8d47-18bb7f364c9a",
+      "ChildCategories": [
+        {
+          "MissitoId": "bcddead4-216e-4734-9760-ab592efbbe88"
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Name": "AD Group Management",
+      "Description": "AD Group Management",
+      "ParentCategoryId": 1,
+      "MissitoId": "bcddead4-216e-4734-9760-ab592efbbe88",
+      "ChildCategories": []
+    }
+  ],
+  "Supplier": [],
+  "ServiceType": [
+    {
+      "Id": 4,
+      "Name": "AD Group management"
+    },
+    {
+      "Id": 1,
+      "Name": "CurrentUser"
+    },
+    {
+      "Id": 3,
+      "Name": "Software"
+    },
+    {
+      "Id": 2,
+      "Name": "CurrentComputer"
+    }
+  ],
+  "LookUp": [
+    {
+      "Id": 3,
+      "WsUrl": "",
+      "ChildServiceTypeId": 4,
+      "ParentServiceTypeId": 1,
+      "InventoryServiceId": 3,
+      "InventoryService": {
+        "Active": true,
+        "MissitoId": "51b8f78a-c3d9-4865-b51c-d9ca578c958d"
+      },
+      "ParentServiceType": {
+        "Name": "CurrentUser"
+      },
+      "ChildServiceType": {
+        "Name": "AD Group management"
+      }
+    },
+    {
+      "Id": 1,
+      "WsUrl": "",
+      "ChildServiceTypeId": 3,
+      "ParentServiceTypeId": 1,
+      "InventoryServiceId": 2,
+      "InventoryService": {
+        "Active": true,
+        "MissitoId": "d7a73107-65c1-4522-a783-215a2ca128d3"
+      },
+      "ParentServiceType": {
+        "Name": "CurrentUser"
+      },
+      "ChildServiceType": {
+        "Name": "Software"
+      }
+    },
+    {
+      "Id": 2,
+      "WsUrl": "",
+      "ChildServiceTypeId": 3,
+      "ParentServiceTypeId": 2,
+      "InventoryServiceId": 2,
+      "InventoryService": {
+        "Active": true,
+        "MissitoId": "d7a73107-65c1-4522-a783-215a2ca128d3"
+      },
+      "ParentServiceType": {
+        "Name": "CurrentComputer"
+      },
+      "ChildServiceType": {
+        "Name": "Software"
+      }
+    }
+  ],
+  "InventoryService": [
+    {
+      "Id": 3,
+      "Name": "Check my group membership",
+      "Description": "Gets all groups that a user is a member of.",
+      "Command": "function Get-InventoryServiceInstances \n{\n    param (\n    [string]$parentId,\n    [string[]]$inventoryKeys\n    )\n    \n    $Domain, $Object = $parentId -split '\\\\'\n    \n    $CurrentObject = Get-ADObject -Filter \"SamAccountName -eq \"\"$Object\"\"\" -Properties MemberOf | Select-Object -ExpandProperty MemberOf | sort-object\n    \n    foreach ($group in $CurrentObject) {\n        $GroupName = ($group -split ',')[0].TrimStart('CN=')\n        $inventoriedServiceInstance = New-InventoryServiceInstance -InventoryKey 'ADGroup' -Identifier $GroupName -ServiceName 'AD Group:'\n        write-host \"group: $group\"\n        write-host \"groupname: $GroupName\"\n        write-host \"parentID: $parentId\"\n\n        $inventoriedServiceInstance | Add-InstanceAttribute -Name 'GroupName' -Value $GroupName -Primary $true \n        $inventoriedServiceInstance | Add-InstanceAttribute -Name 'ObjectName' -Value $parentId\n        $inventoriedServiceInstance | Add-InstanceAttribute -Name 'group' -Value $group -hidden $true\n    \n        $inventoriedServiceInstance\n    }\n}\n",
+      "Active": true,
+      "MissitoId": "51b8f78a-c3d9-4865-b51c-d9ca578c958d"
+    }
+  ],
+  "Service": [
+    {
+      "Id": 3,
+      "Name": "User AD Group Management",
+      "Price": 0.00,
+      "Rent": 0.00,
+      "Description": "{\"en\":\"This service contains tools to add, remove, and verify your group membership.\"}",
+      "Status": "Active",
+      "ImageUri": "/StaticContent/ServiceImages/WindowsUserIcon.png",
+      "Instanciate": false,
+      "LookUpValue": "ADGroup",
+      "ServiceTypeId": 4,
+      "MissitoId": "0cca6d3a-d60b-40eb-ace9-f975e73e5857",
+      "AverageRating": 0.0,
+      "ReviewCount": 0,
+      "Category": [
+        {
+          "MissitoId": "dc77b6d5-0fd1-48b0-8d47-18bb7f364c9a"
+        },
+        {
+          "MissitoId": "bcddead4-216e-4734-9760-ab592efbbe88"
+        }
+      ],
+      "ServiceType": {
+        "Name": "AD Group management"
+      }
+    }
+  ],
+  "ServiceParameterSetting": [
+    {
+      "Id": 21,
+      "Parameter": {
+        "MissitoId": "3bdf9d0b-06e0-4d8c-b61c-b7ae6f848010"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "cbcaf996-53d7-4d74-87d8-15d782650d77"
+      },
+      "Service": {
+        "MissitoId": "0cca6d3a-d60b-40eb-ace9-f975e73e5857",
+        "AverageRating": 0.0,
+        "ReviewCount": 0
+      },
+      "Value": "{{ia:group}}",
+      "Visible": 0,
+      "AutoCompleteServiceURI": "",
+      "MissitoId": "01578236-f9d1-4481-b48d-8eb71ccec573",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    },
+    {
+      "Id": 22,
+      "Parameter": {
+        "MissitoId": "c776ec85-d934-40de-b58f-365db762e027"
+      },
+      "WorkflowActivity": {
+        "MissitoId": "cbcaf996-53d7-4d74-87d8-15d782650d77"
+      },
+      "Service": {
+        "MissitoId": "0cca6d3a-d60b-40eb-ace9-f975e73e5857",
+        "AverageRating": 0.0,
+        "ReviewCount": 0
+      },
+      "Value": "{{na:user.activedirectory.distinguishedName}}",
+      "Visible": 0,
+      "AutoCompleteServiceURI": "",
+      "MissitoId": "a6b8ef53-c6a9-436f-9114-53c4a5aa0fb1",
+      "ConnectedPowershellWebserviceConfiguration": ""
+    }
+  ],
+  "ServiceActivitySetting": [],
+  "ServiceWorkflow": [
+    {
+      "Id": 6,
+      "Workflow": {
+        "MissitoId": "1446a948-9fb9-4b21-955d-a5a0e340e8df"
+      },
+      "Service": {
+        "MissitoId": "0cca6d3a-d60b-40eb-ace9-f975e73e5857",
+        "AverageRating": 0.0,
+        "ReviewCount": 0
+      },
+      "MissitoId": "5dd9063b-12d0-41fe-a8a1-c4e1660c4e68"
+    },
+    {
+      "Id": 7,
+      "Workflow": {
+        "MissitoId": "71527e9a-52e7-4112-9405-bf562b2e4a74"
+      },
+      "Service": {
+        "MissitoId": "0cca6d3a-d60b-40eb-ace9-f975e73e5857",
+        "AverageRating": 0.0,
+        "ReviewCount": 0
+      },
+      "MissitoId": "a0ec44d4-fc06-4b48-bcad-9627474847a2"
+    }
+  ],
+  "OperationAutherization": [],
+  "PowershellWebservice": [
+    {
+      "Id": 8,
+      "Name": "FindADGroup",
+      "Description": "Searches for an AD group",
+      "Category": "AD Management",
+      "Command": "function FindADGroup {\n    Param(\n        [string]$Group\n    )\n    \n\tGet-ADGroup -Filter \"Name -like '$Group*'\"\n}",
+      "MissitoId": "90b99a4e-29a9-4804-b19e-263f0dddd85b",
+      "Parameters": [
+        {
+          "Name": "Group",
+          "Value": ""
+        }
+      ]
+    }
+  ],
+  "ServiceAccount": [],
+  "OptionSource": [],
+  "OptionValue": [],
+  "ScheduledTask": [],
+  "Files": {
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1\\addusertogroup.ps1": {
+      "OrginalPath": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1\\addusertogroup.ps1",
+      "EntryName": "667f5d0e-e394-41e6-b41c-9dcdce7e72d6",
+      "MD5Hash": "1nOs0en36BjlXl+y36BCHQ=="
+    },
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1\\sendmailmessage.ps1": {
+      "OrginalPath": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1\\sendmailmessage.ps1",
+      "EntryName": "7ec59d3e-dbbb-4eb1-a035-d10e34e89444",
+      "MD5Hash": "ppQJk9ku7aw0DE6QwCkjgQ=="
+    },
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1\\removeuserfromgroup.ps1": {
+      "OrginalPath": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1\\removeuserfromgroup.ps1",
+      "EntryName": "7c743a93-978c-41f2-9f33-50e7cfdfaf40",
+      "MD5Hash": "tj20T06ziIZ/BeHPN/yAEA=="
+    },
+    "/StaticContent/ServiceImages/WindowsUserIcon.png": {
+      "OrginalPath": "/StaticContent/ServiceImages/WindowsUserIcon.png",
+      "EntryName": "18b43082-731a-4505-bf37-a3907408d25b"
+    }
+  },
+  "FileCollections": {
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1": {
+      "Name": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1",
+      "Files": [
+        "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\addusertogroup\\1\\addusertogroup.ps1"
+      ]
+    },
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1": {
+      "Name": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1",
+      "Files": [
+        "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\sendmailmessage\\1\\sendmailmessage.ps1"
+      ]
+    },
+    "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1": {
+      "Name": "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1",
+      "Files": [
+        "C:\\Program Files\\Snow Software\\Snow Automation Platform\\Activities\\removeuserfromgroup\\1\\removeuserfromgroup.ps1"
+      ]
+    },
+    "ServiceImages": {
+      "Name": "ServiceImages",
+      "Files": [
+        "/StaticContent/ServiceImages/WindowsUserIcon.png"
+      ]
+    }
+  },
+  "ImportParameter": [],
+  "Meta": {
+    "Version": "3.7.0.2099",
+    "CreatedDate": "2018-12-04T14:16:50.2560359+01:00",
+    "Name": "User AD Group Management",
+    "ImportedId": 0,
+    "Type": "AutomationBook"
+  }
+}

@@ -1,0 +1,7 @@
+﻿Param(
+    [string]$Object,
+    [string]$Group
+)
+
+Remove-ADGroupMember -Identity $Group -Members $Object -Confirm:$false
+Write-host "Removed $Object from $group"

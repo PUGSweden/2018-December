@@ -1,0 +1,16 @@
+﻿Param(
+    [string]$To,
+    [string]$Group
+)
+
+$SMTPServer = Get-APSetting MailRelayServer
+$From = Get-APSetting WorkflowEngineMailFromAddress
+$MailSplat = @{
+    'To' = $To 
+    'From' = $From 
+    'Subject' = 'Group Membership added' 
+    'Body' = "Congratulations! You are now a member of $Group." 
+    'SmtpServer' = $SMTPServer
+}
+
+Send-MailMessage @MailSplat

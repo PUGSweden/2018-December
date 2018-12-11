@@ -1,0 +1,6 @@
+﻿Param(
+    [string]$Object,
+    [string]$Group
+)
+
+Add-ADGroupMember -Identity $group -Members $Object
